@@ -17,7 +17,7 @@ const Home = () => {
 
           <div className="flex flex-row gap-6 text-spacegrotesk">
             <h1 className="text-xl font-semibold capitalize">LOGIN</h1>
-            <button className="px-3 py-1 mr-4 bg-[#C7C7C7] text-black rounded-lg opacity-60">SIGN UP</button>
+            <button className="px-3 py-1 mr-4 bg-[#C7C7C7] text-black rounded-lg opacity-60 -mt-1">SIGN UP</button>
           </div>
         </div>
 
