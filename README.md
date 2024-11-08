@@ -1,16 +1,18 @@
 Here’s a well-structured README file based on the provided code and configurations:
+Here's a modified version of the README for your project, incorporating the AI/ML component and all the saved data:
 
 ---
 
 # MNIT React Hack-A-Thon Project
 
-This project is a React web application designed to showcase various components using modern front-end technologies like Vite, React, TailwindCSS, and ESLint. It is set up with an efficient development environment and styling system, including responsive layouts and interactive features.
+This project is a React web application designed for the 2024 MNIT Hack-A-Thon. It showcases various components using modern front-end technologies like Vite, React, TailwindCSS, and ESLint. Additionally, the project incorporates an AI/ML component to generate fake freelancer data and cluster them for optimal team selection based on project requirements. The system uses KMeans clustering to recommend the best teams based on role, budget, and duration.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
+- [AI/ML and Toolkit Used](#aiml-and-toolkit-used)
 - [Folder Structure](#folder-structure)
 - [License](#license)
 
@@ -21,8 +23,8 @@ To get started with this project, follow these steps:
 ### 1. Clone the Repository
 
 ```bash
-git clone <[repository-url](https://github.com/Shulinagarwal/mnit)>
-cd <mnit>
+git clone https://github.com/Shulinagarwal/mnit
+cd mnit
 ```
 
 ### 2. Install Dependencies
@@ -43,25 +45,43 @@ npm run dev
 
 This will start the server, and you can view the app in your browser at `http://localhost:3000`.
 
+### 4. Set up Python Backend (AI/ML Components)
+
+1. Set up a Python virtual environment (optional but recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+2. Install the required Python libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the Python script to generate fake freelancer data and apply clustering:
+   ```bash
+   python generate_teams.py
+   ```
+
+4. Modify the script to generate team recommendations as per your requirements.
+
+---
+
 ## Usage
 
 ### Routes
 
 - **Home Page**: The main page of the application with various sections like Reviews, Page, Excite, Slogan, and Footer.
-- **Jobs Page**: A separate page dedicated to showcasing jobs.
+- **Jobs Page**: A separate page dedicated to showcasing job listings.
 
-### Components
+### AI/ML Team Recommendations
 
-The application consists of the following key components:
+The AI/ML component helps in selecting the best freelance team based on the following:
+- **Freelancer data**: Fake data is generated for freelancers, including their role, skills, and performance.
+- **Clustering**: KMeans clustering is applied to group freelancers based on skill proficiency, performance score, and hourly rate.
+- **Team selection**: The algorithm recommends the best, second-best, and third-best teams based on the available budget and project duration.
 
-- `Home`: Displays the home section.
-- `Reviews`: Showcases user reviews.
-- `Page`: A general page section.
-- `Excite`: A section to excite users with content.
-- `Slogan`: Displays a slogan for the application.
-- `Footer`: The footer section of the page.
-- `Third`: A component for additional content.
-- `Jobs`: A page for job listings.
+---
 
 ## Technologies Used
 
@@ -72,6 +92,29 @@ The application consists of the following key components:
 - **React Router**: A library for handling routing in React applications.
 - **Expo Google Fonts**: A library for using Google Fonts with Expo.
 - **Autoprefixer**: A tool to automatically add vendor prefixes to CSS.
+- **Python**: For backend processing, generating fake freelancer data, and applying AI/ML clustering.
+- **pandas**: For data manipulation and creating data frames.
+- **scikit-learn**: For machine learning models like KMeans clustering and data scaling.
+- **faker**: For generating fake freelancer data.
+- **StandardScaler**: For normalizing data before applying machine learning techniques.
+
+---
+
+## AI/ML and Toolkit Used
+
+### AI/ML Techniques:
+- **KMeans Clustering**: Used to categorize freelancers into clusters based on their skills, performance, and experience. The best teams are selected by considering both the role and cluster characteristics.
+- **Data Preprocessing**: Features like skill proficiency, performance score, and hourly rate are standardized using `StandardScaler` to improve clustering accuracy.
+- **Team Selection Algorithm**: Based on the budget, role requirements, and project duration, the algorithm recommends the best freelancers for the team.
+
+### Toolkit Used:
+- **Python Libraries**:
+  - `pandas`: For handling data and creating data frames
+  - `faker`: For generating fake freelancer data
+  - `scikit-learn`: For machine learning models like KMeans clustering and data scaling
+  - `StandardScaler`: For normalizing data before applying machine learning techniques
+
+---
 
 ## Folder Structure
 
@@ -94,14 +137,21 @@ Here is an overview of the folder structure:
 /public
   - index.html
   - favicon.svg
+/scripts
+  - generate_teams.py
+  - requirements.txt
 ```
+
+---
 
 ## License
 
-This project is open-source and available under the 24Hr Hack-A-Thon License Worked by Aditya, Abde, Shulin Agarwal, Utkarsh Bansal and Kartikk Sharma.
+This project is open-source and available under the 24Hr Hack-A-Thon License worked by Aditya, Abde, Shulin Agarwal, Utkarsh Bansal, and Kartikk Sharma.
 
-Everything from the User Interface to the Developement Part has been Made and it is a request to ask us before you use it.
-Date of Work - 8/11/2024 to 9/11/2024
+Everything from the User Interface to the Development part has been made, and it is a request to ask us before you use it.  
+**Date of Work**: 8/11/2024 to 9/11/2024
+
+This project is a part of our startup, and unauthorized use is prohibited. Please be careful not to use this anywhere else without permission.
 
 ---
 
