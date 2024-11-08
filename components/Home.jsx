@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -12,8 +13,9 @@ const Home = () => {
           <div className="m-5 ml-16 flex flex-row space-x-4 items-center gap-6">
             <img src="/s2.png" alt="" className="bg-[#C7C7C7] pr-4 pl-4 rounded-lg opacity-60" />
             <h1 className="text-xl font-semibold ">HOME</h1>
-            <h1 className="text-xl font-semibold capitalize">TEAMIFY</h1>
-          </div>
+            <Link to='/choose'><button className="text-xl font-semibold capitalize">TEAMIFY</button>
+            </Link>
+            </div>
 
           <div className="flex flex-row gap-6 text-spacegrotesk">
             <h1 className="text-xl font-semibold capitalize">LOGIN</h1>
