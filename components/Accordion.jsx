@@ -62,9 +62,9 @@ export function AccordionCustomIcon() {
         </AccordionBody>
         </div>
       </Accordion>
-      <Accordion open={open === 1} icon={<Icon id={1} open={open} className="border-neutral-50" />}>
+      <Accordion open={open === 1} icon={<Icon id={4} open={open} className="border-neutral-50" />}>
       <div className="ml-10 mb-10  border-neutral-700 border p-10 rounded-2xl">
-        <AccordionHeader onClick={() => handleOpen(1)} >
+        <AccordionHeader onClick={() => handleOpen(4)} >
          Is Teamify only for team-based projects or can I work on individual tasks too?
         </AccordionHeader>
         <AccordionBody>
@@ -72,9 +72,9 @@ export function AccordionCustomIcon() {
         </AccordionBody>
         </div>
       </Accordion>
-      <Accordion open={open === 1} icon={<Icon id={1} open={open} className="border-neutral-50" />}>
+      <Accordion open={open === 1} icon={<Icon id={5} open={open} className="border-neutral-50" />}>
       <div className="ml-10 mb-10  border-neutral-700 border p-10 rounded-2xl">
-        <AccordionHeader onClick={() => handleOpen(1)} >
+        <AccordionHeader onClick={() => handleOpen(5)} >
          How can I track my freelancer's performance on Teamify?
         </AccordionHeader>
         <AccordionBody>
