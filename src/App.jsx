@@ -10,6 +10,8 @@ import Third from "../components/Third";
 import Jobs from "../components/Jobs";
 import Choose from '../components/Choose';
 import Create from '../components/Create';
+import Sign from '../components/Sign';
+import Login from '../components/Login';
 
 function App() {
   return (
@@ -34,7 +36,8 @@ function App() {
         <Route path="/join" element={<Choose/>} />
 
         <Route path="/create" element={<Create/>} />
-
+        <Route path="/signup" element={<Sign/>} />
+        <Route path="/login" element={<Login/>} />
       </Routes>
     </Router>
       </>

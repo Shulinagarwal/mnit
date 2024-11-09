@@ -18,8 +18,12 @@ const Home = () => {
             </div>
 
           <div className="flex flex-row gap-6 text-spacegrotesk">
-            <h1 className="text-xl font-semibold capitalize">LOGIN</h1>
-            <button className="px-3 py-1 mr-4 bg-[#C7C7C7] text-black rounded-lg opacity-60 -mt-1">SIGN UP</button>
+          <Link to="/login">
+            <button className="text-xl font-semibold capitalize">LOGIN</button>
+            </Link>
+            <Link to="/signup">
+            <button className="px-3 py-1 mr-4 bg-[#C7C7C7] text-black rounded-lg opacity-60 -mt-1 z-10">SIGN UP</button>
+            </Link>
           </div>
         </div>
 
