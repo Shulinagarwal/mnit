@@ -26,7 +26,7 @@ const Home = () => {
         <div className="absolute bottom-16 left-14 text-white flex flex-col items-start space-y-4 z-10">
           <h1 className="text-8xl font-normal"><b className="font-bold">TEAMIFY</b> PROTOCOL</h1>
           <p className="text-3xl w-[80%]">Join India's Smart Freelance Team Marketplace – Powered by AI & Community!</p>
-          <Link to="/jobs">
+          <Link to="/choose">
           <button className="px-4 py-2 mt-2 bg-black rounded-lg text-white font-semibold">GET STARTED</button>
         </Link>
           </div>
