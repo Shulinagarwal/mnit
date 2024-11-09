@@ -84,7 +84,7 @@ The AI/ML component helps in selecting the best freelance team based on the foll
 ---
 
 ## Technologies Used
-
+- **Figma**: A web-based UI/UX design tool used to create visual and interactive designs. The user interface for this project was designed in Figma, ensuring an intuitive and visually appealing experience.
 - **React**: A JavaScript library for building user interfaces.
 - **Vite**: A build tool that provides fast, efficient development with React.
 - **TailwindCSS**: A utility-first CSS framework to create modern, responsive designs.
