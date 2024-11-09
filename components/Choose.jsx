@@ -61,9 +61,9 @@ const Choose = () => {
       </button>
     </Link>
 
-    <h1 className='text-gray-300 z-40'>OR</h1>  <Link to="/jobs">
-      <button className='p-3 bg-[#4FA9E2] text-white rounded-lg text-lg z-50'>
-        Click here
+    <h1 className='text-gray-300 z-40'>OR</h1>  <Link to="/CreatePost">
+      <button className='p-4 border-2 border-gray-700 rounded-lg hover:bg-gray-700 hover:text-white transition-colors'>
+        Post Job
       </button>
     </Link>
   </div>
