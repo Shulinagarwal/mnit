@@ -10,6 +10,7 @@ import Third from "../components/Third";
 import Jobs from "../components/Jobs";
 import Choose from '../components/Choose';
 import Create from '../components/Create';
+import CreatePost from '../components/CreatePost';
 function App() {
   return (
       <>       
@@ -33,7 +34,7 @@ function App() {
         <Route path="/join" element={<Choose/>} />
 
         <Route path="/create" element={<Create/>} />
-
+<Route path="/CreatePost" element={<CreatePost/>} />
       </Routes>
     </Router>
       </>
