@@ -31,12 +31,10 @@ export function AccordionCustomIcon() {
       <Accordion open={open === 1} icon={<Icon id={1} open={open} className="border-neutral-50" />}>
       <div className="ml-10 mb-10  border-neutral-700 border p-10 rounded-2xl">
         <AccordionHeader onClick={() => handleOpen(1)} >
-          How to use Material Tailwind?
+          How does our AI-powered team assembly work?
         </AccordionHeader>
         <AccordionBody>
-          We&apos;re not always in the position that we want to be at. We&apos;re constantly
-          growing. We&apos;re constantly making mistakes. We&apos;re constantly trying to express
-          ourselves and actualize our dreams.
+         Teamify uses AI algorithms to match freelancers based on their skills, experience, and past project performance. This ensures that every team assembled has complementary strengths, making collaboration smoother and more effective. You won’t have to search for the right fit — our AI does it for you!
         </AccordionBody>
         </div>
       </Accordion>
@@ -44,43 +42,40 @@ export function AccordionCustomIcon() {
 
       <div className="ml-10 mb-10  border-neutral-700 border p-10 rounded-2xl">
         <AccordionHeader onClick={() => handleOpen(2)} >
-          How to use Material Tailwind?
+         What kind of mentorship and skill-building opportunities are available on Teamify?
         </AccordionHeader>
         <AccordionBody>
-          We&apos;re not always in the position that we want to be at. We&apos;re constantly
-          growing. We&apos;re constantly making mistakes. We&apos;re constantly trying to express
-          ourselves and actualize our dreams.
+        Skill Assessments: Teamify provides periodic skill assessments to gauge a user’s growth over time, allowing for progress tracking and tailored feedback from mentors.
+          Certification Programs: Certain courses and workshops offer certification upon completion, helping users build credentials for career advancement and personal development.
+
         </AccordionBody>
         </div>
       </Accordion>
       <Accordion open={open === 3} icon={<Icon id={3} open={open} />}>
       <div className="ml-10 mb-10  border-neutral-700 border p-10 rounded-2xl">
         <AccordionHeader onClick={() => handleOpen(3)} >
-          How to use Material Tailwind?
+         How can I get started with Teamify as a freelancer or employer?
         </AccordionHeader>
         <AccordionBody>
-          We&apos;re not always in the position that we want to be at. We&apos;re constantly
-          growing. We&apos;re constantly making mistakes. We&apos;re constantly trying to express
-          ourselves and actualize our dreams.
+          Browse Listings: Teamify has a marketplace of projects posted by employers. Use filters to narrow down projects that align with your skills and interests.
+          Submit Proposals: Write tailored proposals for each project, showcasing your understanding of the requirements and how your skills are a match.
         </AccordionBody>
         </div>
       </Accordion>
       <Accordion open={open === 1} icon={<Icon id={1} open={open} className="border-neutral-50" />}>
       <div className="ml-10 mb-10  border-neutral-700 border p-10 rounded-2xl">
         <AccordionHeader onClick={() => handleOpen(1)} >
-          How to use Material Tailwind?
+         Is Teamify only for team-based projects or can I work on individual tasks too?
         </AccordionHeader>
         <AccordionBody>
-          We&apos;re not always in the position that we want to be at. We&apos;re constantly
-          growing. We&apos;re constantly making mistakes. We&apos;re constantly trying to express
-          ourselves and actualize our dreams.
+         No, Teamify is not limited to team-based projects—you can work on both individual tasks and team-based assignments. While Teamify emphasizes collaborative, team-building opportunities, it also supports freelancers and employers looking for specialized help on specific, individual tasks.
         </AccordionBody>
         </div>
       </Accordion>
       <Accordion open={open === 1} icon={<Icon id={1} open={open} className="border-neutral-50" />}>
       <div className="ml-10 mb-10  border-neutral-700 border p-10 rounded-2xl">
         <AccordionHeader onClick={() => handleOpen(1)} >
-          How to use Material Tailwind?
+         How can I track my freelancer's performance on Teamify?
         </AccordionHeader>
         <AccordionBody>
           We&apos;re not always in the position that we want to be at. We&apos;re constantly
